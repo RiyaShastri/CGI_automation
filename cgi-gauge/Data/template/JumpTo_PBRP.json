@@ -1,0 +1,41 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Setup PBRP",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Parameter Id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Include Allotments": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Search": {
+            "Parameter Id": "11"
+        },
+        "Parameters": {
+            "Roll Mode": "Create Zero Dollar Lines",
+            "Source BFY":"2019",
+            "Target BFY":"2020",
+            "Selected Funds": "",
+            "Include Allotments": true
+        }
+    }
+}

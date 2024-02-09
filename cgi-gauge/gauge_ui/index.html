@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maine Automation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" media="all">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@1.3.5/dist/jsoneditor.js"></script>
+    <script type="text/javascript" src="/js/process.js"> </script>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-black">
+                <h3 class="card-title card-title mb-0">Maine Automation</h3>
+            </div>
+            <div class="card-body">
+                <form id="myForm" name="myForm" enctype="multipart/form-data">
+
+                    <div id="firstDiv" class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Full name </label>
+                                <input type="text" id="name" class="form-control" name="name">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" id="email" class="form-control" name="email">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>CC</label>
+                                <input type="text" id="cc" class="form-control" name="cc">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <fieldset class="mb-3">
+                                <legend>Advantage FIN Detail</legend>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>URL</label>
+                                            <input type="text" id="url" class="form-control" name="url">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>User Name</label>
+                                            <input type="text" id="userid" class="form-control" name="userid">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input class="form-control" type="password" name="password" id="password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <fieldset class="mb-3">
+                                <legend>Advantage VSS Admin Detail</legend>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>URL</label>
+                                            <input type="text" id="vss_url" class="form-control" name="vss_url">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>User Name</label>
+                                            <input type="text" id="vss_userid" class="form-control" name="vss_userid">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input class="form-control" type="password" name="vss_password"
+                                                id="vss_password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <fieldset class="mb-3">
+                                <legend>Advantage FIN SSH Detail</legend>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Host</label>
+                                            <input type="text" id="fin_ssh_host" class="form-control"
+                                                name="fin_ssh_host">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>User Name</label>
+                                            <input type="text" id="fin_ssh_userid" class="form-control"
+                                                name="fin_ssh_userid">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input class="form-control" type="password" name="fin_ssh_password"
+                                                id="fin_ssh_password">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Command to Bounce server</label>
+                                            <input type="text" id="fin_ssh_bounce_server_command" class="form-control"
+                                                name="fin_ssh_bounce_server_command">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <fieldset class="mb-3">
+                                <legend>Database Detail</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>User</label>
+                                            <input class="form-control" type="text" id="dbuserid" name="dbuserid">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input class="form-control" type="password" name="dbpassword"
+                                                id="dbpassword">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Host</label>
+                                            <input class="form-control" type="text" id="host" name="host">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label>Port</label>
+                                            <input class="form-control" type="text" id="port" name="port">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Service name</label>
+                                            <input class="form-control" type="text" id="serviceName" name="serviceName">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group mb-0">
+                                <button class="btn btn-primary" onclick="toggleDiv()" type="button"
+                                    id="next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="secoundDiv" class="row">
+
+                        <div class="col-12 tab-wrapper">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#phase1" role="tab" data-toggle="tab">Phase 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#phase2" role="tab" data-toggle="tab">Phase 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#phase3" role="tab" data-toggle="tab">Phase 3</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="phase1">
+                                    <div class="row" id="test_case_wrapper_1">
+                                        <div class="col-12">
+                                            <br>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="75%">
+                                                            <div
+                                                                class="form-group custom-control custom-checkbox mb-0 text-left">
+                                                                <input type="checkbox" name="fileSelectAll_1"
+                                                                    class="custom-control-input" id="selectAll_1"
+                                                                    onclick="selectAllNew(1)">
+                                                                <label class="custom-control-label"
+                                                                    for="selectAll_1">Select
+                                                                    all process</label>
+                                                            </div>
+                                                        </th>
+                                                        <th width="25%">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="processBody" id="processBody_phase1">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="phase2">
+                                    <div class="row" id="test_case_wrapper_2">
+                                        <div class="col-12">
+                                            <br>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="75%">
+                                                            <div
+                                                                class="form-group custom-control custom-checkbox mb-0 text-left">
+                                                                <input type="checkbox" name="fileSelectAll_2"
+                                                                    class="custom-control-input" id="selectAll_2"
+                                                                    onclick="selectAllNew(2)">
+                                                                <label class="custom-control-label"
+                                                                    for="selectAll_2">Select
+                                                                    all process</label>
+                                                            </div>
+                                                        </th>
+                                                        <th width="25%">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="processBody" id="processBody_phase2">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="phase3">
+                                    <div class="row" id="test_case_wrapper_3">
+                                        <div class="col-12">
+                                            <br>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="75%">
+                                                            <div
+                                                                class="form-group custom-control custom-checkbox mb-0 text-left">
+                                                                <input type="checkbox" name="fileSelectAll_3"
+                                                                    class="custom-control-input" id="selectAll_3"
+                                                                    onclick="selectAllNew(3)">
+                                                                <label class="custom-control-label"
+                                                                    for="selectAll_3">Select
+                                                                    all process</label>
+                                                            </div>
+                                                        </th>
+                                                        <th width="25%">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="processBody" id="processBody_phase3">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Popup menu -->
+                        <div id="myModal" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Edit Parameters</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id='json_editor'></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" name="btnEditParameter"
+                                            id="btnEditParameter">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <br>
+                                <button class="btn btn-default" type="button" onclick="toggleDiv()">Back</button>
+                                <button class="btn btn-primary mr-3" type="button" id="subdata">Submit</button>
+                                <a class="btn btn-primary mr-3" id="viewReport" target="_blank" href="/report">View
+                                    Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div id="cover-spin"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var fileName;
+        var editorObj;
+        var json_data = [];
+        var position;
+        var selectedProcesses = [];
+        var firstPage = document.getElementById("firstDiv");
+        var secoundpage = document.getElementById("secoundDiv");
+
+        $(document).ready(function () {
+            secoundpage.style.display = "none";
+
+            // Fetch details of User and Database and display in UI
+            $.get('json/uiData.json', function (json) {
+                const db_data = json.databaseDetails;
+                const userData = json.userData;
+                $('#name').val(userData.name);
+                $('#email').val(userData.email);
+                $('#cc').val(userData.cc);
+
+                $('#url').val(userData.url);
+                $('#userid').val(userData.userid);
+
+                $('#fin_ssh_host').val(userData.fin_ssh_host);
+                $('#fin_ssh_userid').val(userData.fin_ssh_userid);
+                $('#fin_ssh_bounce_server_command').val(userData.fin_ssh_bounce_server_command);
+
+                $('#vss_url').val(userData.vss_url);
+                $('#vss_userid').val(userData.vss_userid);
+
+                $('#dbuserid').val(db_data.username);
+                $('#host').val(db_data.host);
+                $('#port').val(db_data.port);
+                $('#serviceName').val(db_data.serviceName);
+            });
+
+            // Create list test case with checkbox for selection and button to edit parameter
+            createProcess(processData);
+
+            function createProcess(processDataArr) {
+
+                processDataArr.forEach(function (processData, index) {
+                    var processJson = "'" + processData.processJson + "'";
+                    var innerHTML = "";
+                    innerHTML += '<tr>';
+                    innerHTML += '<td width="80%">';
+                    innerHTML += '<div class="form-group custom-control custom-checkbox d-flex align-items-center">';
+                    innerHTML += '<input type="checkbox" name="file" class="custom-control-input" id="param_' + processData.phase + '_' + index + '" onchange="processSelection(this)" value="' + JSON.stringify(processData).replace(/"/g, "'") + '">';
+                    innerHTML += '<label class="custom-control-label" for="param_' + processData.phase + '_' + index + '">' + processData.processName + '</label>';
+                    innerHTML += '</div>';
+                    innerHTML += '</td>';
+                    innerHTML += '<td width="20%" class="text-center">';
+                    if (processData.hasOwnProperty('isQuery') && !processData.isQuery) {
+                        innerHTML += '<button id="btn_param_' + processData.phase + '_' + index + '" class="btn btn-primary ml-auto" type="button" disabled="disabled" data-toggle="modal" data-target="#myModal"';
+                        innerHTML += 'onclick="fetchData(' + processJson + ', ' + processData.position + ')">Edit Parameter</button>';
+                    }
+                    innerHTML += '</td>';
+                    innerHTML += '</tr>';
+                    $('#test_case_wrapper_' + processData.phase + ' .processBody').append(innerHTML);
+                });
+            };
+
+
+            // Submit button to execute selected test case using Guage
+            $("#subdata").click(function () {
+                let reqObj;
+                let defaultData = [];
+
+                Swal.fire({
+                    title: "Do not click anywhere in browser.",
+                    text: "",
+                    type: "info",
+                    closeOnConfirm: false,
+                    showLoaderOnConfirm: true
+                });
+
+                document.getElementById("subdata").disabled = true;
+
+                selectedProcesses = [];
+                $.each($("input[name='file']:checked"), function () {
+                    selectedProcesses.push(JSON.parse($(this).val().replace(/'/g, '"')));
+                });
+                const formData = {
+                    "userData": {
+                        "name": document.getElementById('name').value,
+                        "email": document.getElementById('email').value,
+                        "cc": document.getElementById('cc').value,
+
+                        "url": document.getElementById('url').value,
+                        "userid": document.getElementById('userid').value,
+                        "password": document.getElementById('password').value,
+
+                        "fin_ssh_host": document.getElementById('fin_ssh_host').value,
+                        "fin_ssh_userid": document.getElementById('fin_ssh_userid').value,
+                        "fin_ssh_password": document.getElementById('fin_ssh_password').value,
+                        "fin_ssh_bounce_server_command": document.getElementById('fin_ssh_bounce_server_command').value,
+
+                        "vss_url": document.getElementById('vss_url').value,
+                        "vss_userid": document.getElementById('vss_userid').value,
+                        "vss_password": document.getElementById('vss_password').value
+                    },
+                    "databaseDetails": {
+                        "username": document.getElementById('dbuserid').value,
+                        "password": document.getElementById('dbpassword').value,
+                        "host": document.getElementById('host').value,
+                        "port": document.getElementById('port').value,
+                        "serviceName": document.getElementById('serviceName').value
+                    },
+                    "selectedProcesses": selectedProcesses
+                };
+                $.ajax({
+                    url: '/executeTestCase',
+                    type: "POST",
+                    data: JSON.stringify(formData),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                    }
+                });
+            });
+        });
+
+        function toggleDiv() {
+            if (secoundpage.style.display === "none") {
+                secoundpage.style.display = "block";
+                firstPage.style.display = "none";
+            } else {
+                secoundpage.style.display = "none";
+                firstPage.style.display = "block";
+            }
+        }
+
+        // Enable / Disable edit parameter button on checkbox selection
+        function processSelection(checkBoxObj) {
+            $('#btn_' + checkBoxObj.id).prop('disabled', !checkBoxObj.checked);
+        }
+
+        function fetchData(fName, file_position) {
+            fileName = fName;
+            position = file_position;
+            var self = this;
+            const reqObj = {
+                "fileName": fName
+            }
+            $.post("/getTemplateWithSchema", reqObj, function (data) {
+                if (data) {
+                    // Configurations for jsoneditor.js
+                    var editorOptions = {
+                        schema: data['schema'] || {},
+                        theme: 'bootstrap4',
+                        disable_array_delete_all_rows: true,
+                        disable_array_delete_last_row: true,
+                        disable_array_add: false,
+                        disable_array_delete: false,
+                        disable_array_reorder: true,
+                        disable_collapse: true,
+                        disable_edit_json: true,
+                        disable_properties: true,
+                        compact: true
+                    }
+                    var element = document.getElementById('json_editor');
+                    $(element).empty();
+                    editorObj = new JSONEditor(element, editorOptions);
+                    editorObj.setValue(data['data'] || {});
+                } else {
+                    alert('EMPTY');
+                }
+            });
+        }
+
+        $('#btnEditParameter').on('click', function () {
+            saveParameter(editorObj.getValue(), fileName, position);
+        });
+
+        function saveParameter(parameterJson, fileName, position) {
+            $('#cover-spin').show();
+            let NewDataObj = {
+                "fileName": fileName,
+                "newdata": JSON.stringify(parameterJson),
+                "position": position
+            };
+            $.post("/saveParameter", NewDataObj).then(function (res) {
+                $('#myModal').modal('hide');
+                $('#cover-spin').hide();
+                displayAlert();
+            });
+        }
+
+        function displayAlert() {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Parameters have been saved successfully.',
+                type: 'success',
+                confirmButtonText: 'Close'
+            });
+        }
+
+        function selectAllNew(phase) {
+            deselectAllPhaseTestCases();
+            var selectAll = document.getElementById('selectAll_' + phase);
+            var testCases = document.getElementsByName('file');
+            var testCases = $(document).find('#processBody_phase' + phase + ' input[name=file]');
+            for (i = 0; i < testCases.length; i++) {
+                if (testCases[i].type == "checkbox") {
+                    testCases[i].checked = selectAll.checked;
+                    if (selectAll.checked) {
+                        $('#btn_param_' + phase + '_' + i).prop('disabled', false)
+                    } else {
+                        $('#btn_param_' + phase + '_' + i).prop('disabled', true);
+                    }
+                }
+            }
+        }
+
+        function deselectAllPhaseTestCases() {
+            var testCases = $(document).find('input[name=file]');
+            for (i = 0; i < testCases.length; i++) {
+                if (testCases[i].type == "checkbox") {
+                    testCases[i].checked = false;
+                    $('#btn_' + testCases[i].id).prop('disabled', true);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

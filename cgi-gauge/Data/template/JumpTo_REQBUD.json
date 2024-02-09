@@ -1,0 +1,11 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup REQBUD"
+    },
+    "data": {
+        "Search": {
+            "Budget Fiscal Year": "2019"
+        }
+    }
+}

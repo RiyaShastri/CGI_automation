@@ -1,0 +1,16 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup ADNT",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "Search": {
+            "Fiscal Year": "2019",
+            "Document Code": "JVAC",
+            "Prefix": ""
+        }
+    }
+}

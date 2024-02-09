@@ -1,0 +1,54 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup APPCTRL",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Parameter Name": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Parameter Value": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Parameter Name": "BACKOUT_APD"
+            },
+            "Parameters": {
+                "Parameter Value": 15
+            }
+        },
+        {
+            "Search": {
+                "Parameter Name": "BACKOUT_FY"
+            },
+            "Parameters": {
+                "Parameter Value": 2019
+            }
+        },
+        {
+            "Search": {
+                "Parameter Name": "AR_REF_OPT"
+            },
+            "Parameters": {
+                "Parameter Value": 1
+            }
+        }
+    ]
+}

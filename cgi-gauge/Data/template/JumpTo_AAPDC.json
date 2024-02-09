@@ -1,0 +1,18 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Setup AAPDC"
+    },
+    "data": {
+        "Search": {
+            "Document Code": "JVAC",
+            "Fiscal Year": "2019",
+            "Fiscal Period": "99"
+        },
+        "Parameters": {
+            "Fiscal Year": "2019",
+            "Fiscal Period ": "99"
+        }
+    }
+}

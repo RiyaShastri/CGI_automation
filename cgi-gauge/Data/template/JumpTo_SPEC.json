@@ -1,0 +1,19 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup SPEC"
+    },
+    "data": {
+        "Search": {
+            "Fiscal Year": "2019"
+        },
+        "Parameters": {
+            "Retained Earnings ": "0302",
+            "Fund Balance": "0302",
+            "Net Assets": "0302",
+            "Master Closing Object": "9049",
+            "Master Closing Revenue Source": "2949",
+            "Annual Closing Offset": "0206"
+        }
+    }
+}

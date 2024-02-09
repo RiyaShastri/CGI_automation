@@ -1,0 +1,23 @@
+{
+    "schema": {
+        "title": "VSS Synchronization",
+        "type": "object"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "Load to VSS"
+            }
+        },
+        "Job Parameters": {
+            "Load to VSS": {
+                "Importing Location at Load to VSS Job": "$$PSMAGVSSEXPORT$$",
+                "Commit Block Size": "1000",
+                "PART 1 - Order necessary for tables toload successfully": "R_DEPT;R_CNTAC_FUNC;R_CNTAC;R_TIN_1099_INFO;R_PNT_VEND_CUST;R_MSTR_AD;R_VEND_CNTAC;R_VEND_ABA_MAINT;R_UNIT;R_VEND_CUST;R_AD;R_VEND_BUS_TYP;R_COMM_CD;R_VEND_COMM;R_SO_QA;R_VEND_SRVC_AREA;DOC_SO;DOC_SR;R_AMHIST;R_VEND_CERT;R_EV_PRICE_DT;R_BUS_TYP;R_VEND_ATT",
+                "PART 2 - Order necessary for tables to load successfully": "R_EXT_EMAIL_LTRCNF;IN_APP_CTRL;R_VEND_SO_RSP;R_GEN_DOC_CTRL;AUTO_DOC_NO;R_1099_RPT_CLS;R_VEND_ORG_RPT_CLS;R_VEND_W8_FORM;R_SR_CLAR_RQST;R_VEND_CUST_ARCH;R_EVAL_CRIT;R_EVAL_CRIT_TMPL;R_EVAL_CRIT_JN;R_GRNTR_EVNT_SCHED;R_GRNTR_EVNT;R_GRNTR_RPT;R_GRPT_CRIT",
+                "PART 3 - Order necessary for tables toload successfully": "R_GRPT_ATT;R_GRNTAPPL_FRM_TYP;R_GRNTAPPL_FRM_PRJ;R_GRNTAPPL_FRM_PRT;R_GRNTAPPL_LST;R_GRNTAPPL_FRM_FLD;R_GRNTE_PRFL;R_ASSOC_ENTY;R_AUDTR;R_GRNT_FY_PFRL;R_GRNT_ELGBLT;R_PARTNER;R_PRCU_TYP",
+                "PART 4 - Order necessary for tables to load successfully": "R_GRNTAPPL_FRM_TBL;R_GRNTAPPL_RPT_FLD"
+            }
+        }
+    }
+}

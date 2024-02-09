@@ -1,0 +1,11 @@
+{
+	"Args": [
+		"run"
+	],
+	"FailedItems": [
+		"specs\\Login.spec",
+		"tempSpecs\\0.spec",
+		"tempSpecs\\1.spec",
+		"tempSpecs\\2.spec"
+	]
+}

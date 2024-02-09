@@ -1,0 +1,68 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Annual close process",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Disable jobs": {
+                    "type": "object",
+                    "title": "Disable jobs",
+                    "properties": {
+                        "Annual Close": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Load JVAC": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Submit JVAC": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Closing AFY": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "Annual Close": false,
+                "Load JVAC": true,
+                "Submit JVAC": true,
+                "Closing AFY": true
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test Annul Close Process"
+            }
+        },
+        "Job Parameters": {
+            "Annul Close": {
+                "Export Location at Annual Close Job": "$$PSMAGFINEXPORT$$",
+                "Logs Location at Annual Close Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Annual Close Job": "$$PSMAGFINPARM$$",
+                "Posting Code used for balancing": "A204",
+                "Client Name appearing on report": "State of Maine",
+                "Closing Accounting Fiscal Year": 2019,
+                "Document Code for generated Journal": "JVAC",
+                "Document Prefix for generated Journal Voucher Annual Close documents": "ACLS",
+                "Department code used in Journal Voucher Annual Close document numbering": "08C",
+                "Document Record Date": "",
+                "Document XML file for generated Journal Voucher Annual Close documents": "JVACDocuments.xml",
+                "Fund code used as part of selection criteria": "",
+                "Name of Ledger to be used as input": "LDGR_FYTD_ACTG",
+                "Opening Accounting Fiscal Year": 2020,
+                "1 = Report Only, 2 = Update, 3 = Report and Update": 1,
+                "Unit code used in Journal Voucher Annual Close document numbering": ""
+            }
+        }
+    }
+}

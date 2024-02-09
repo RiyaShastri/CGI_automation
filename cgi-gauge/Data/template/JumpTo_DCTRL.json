@@ -1,0 +1,95 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup DCTRL",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Document Code": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Future Doc Date Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Future Acctg Prd Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Future FY Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Override of BFY Staging Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Past Doc Date Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Past Acctg Prd Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Past FY Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Inactive COA Codes Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Modify Action Allowed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Cited Authority Required": {
+                            "type": "string"
+                        },
+                        "Vendor Rule": {
+                            "type": "string"
+                        },
+                        "Time Restriction Severity": {
+                            "type": "string"
+                        },
+                        "Time Restriction": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Document Code": "BGCA"
+            },
+            "Parameters": {
+                "Future Doc Date Allowed": true,
+                "Past Doc Date Allowed": false,
+                "Future Acctg Prd Allowed": true,
+                "Past Acctg Prd Allowed": false,
+                "Future FY Allowed": false,
+                "Past FY Allowed": false,
+                "Override of BFY Staging Allowed": true,
+                "Inactive COA Codes Allowed": false,
+                "Modify Action Allowed": true,
+                "Cited Authority Required": "",
+                "Vendor Rule": "Optional",
+                "Time Restriction Severity": "Override",
+                "Time Restriction": "No Limit"
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup AutoFano"
+    },
+    "data": {
+        "Search": {
+            "Prefix": 2019
+        },
+        "Parameters": {
+            "Next available Asset No": 1,
+            "Default Prefix": true
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Open activity Roll Laps job",
+        "properties": {
+            "Disable jobs": {
+                "type": "object",
+                "title": "Disable jobs",
+                "properties": {
+                    "Lapse": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Load and Submit Lapse Document": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Document Exception Report": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "Lapse": false,
+                "Load and Submit Lapse Document": false,
+                "Document Exception Report": false
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test open activity lapse roll"
+            }
+        },
+        "Search": {
+            "Parameter Id": "2"
+        },
+        "Parameters": {
+            "Run Mode": "Update",
+            "Use Detail Pre-Selection Table": "1"
+        }
+    }
+}

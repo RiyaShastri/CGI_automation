@@ -1,0 +1,86 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Setup PRCUTYP",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Procurement Type": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Procurement Type Name": {
+                            "type": "string"
+                        },
+                        "Description": {
+                            "type": "string"
+                        },
+                        "Complexity": {
+                            "type": "string"
+                        },
+                        "Manager": {
+                            "type": "string"
+                        },
+                        "Performance Evaluation Template": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "States Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Select State": {
+                            "type": "string"
+                        },
+                        "State": {
+                            "type": "string"
+                        },
+                        "Default Document Code": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Documents Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Select State": {
+                            "type": "string"
+                        },
+                        "Document Code": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Search": {
+            "Procurement Type": "18"
+        },
+        "Parameters": {
+            "Procurement Type Name": "Blanket Contract",
+            "Description": "Contracts for emergency situations that do not require a vendor.",
+            "Complexity": "3",
+            "Manager": "blamoreau",
+            "Performance Evaluation Template": "COMM"
+        },
+        "States Parameters": {
+            "Select State": "Award",
+            "State": "Award",
+            "Default Document Code": "CTI"
+        },
+        "Documents Parameters": {
+            "Select State": "Award",
+            "Document Code": "CDBL"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "System Assurance 3",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "Test system assurance 3"
+            }
+        },
+        "Job Parameters": {
+            "System Assurance 3 Process": {
+                "Client Name appearing on report": "",
+                "Comma-delimited list of Document Codes to exclude from report": "",
+                "Comma-delimited list of Fiscal Years for which to run report": "2019",
+                "Comma-delimited list of Document Codes for which to run report": "",
+                "Y to only process journal records posted since last report": "N",
+                "Journal or ledger source table": "JRNL_ACTG",
+                "Maximum Prefetch Count": ""
+            }
+        }
+    }
+}

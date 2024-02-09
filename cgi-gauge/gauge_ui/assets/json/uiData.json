@@ -1,0 +1,24 @@
+{
+    "userData": {
+        "name": "Pratik Shah",
+        "email": "psh@narola.email",
+        "cc": "paresh.paladiya@cgi.com",
+        "url": "https://meosc-npd-temp.hostams.com/SH2FIN1X1/Advantage",
+        "userid": "ysable",
+        "password": "Winter@2020",
+        "fin_ssh_host": "10.106.5.14",
+        "fin_ssh_userid": "ysable",
+        "fin_ssh_password": "Spring@2020",
+        "fin_ssh_bounce_server_command": "/advapp/PSMAG/Scripts/Bounce/bounceVls.sh BOUNCE FIN SH2",
+        "vss_url": "https://meosc-npd.hostams.com/SH2VSS1X1/Advantage",
+        "vss_userid": "upansuriya",
+        "vss_password": "Temp1234"
+    },
+    "databaseDetails": {
+        "username": "PPALADIY",
+        "password": "Winter*2020",
+        "host": "10.106.4.12",
+        "port": "1522",
+        "serviceName": "meos2fn3.psmag.cgipdc.cginet"
+    }
+}

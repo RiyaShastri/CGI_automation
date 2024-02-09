@@ -1,0 +1,62 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Run Budget roll jobs from chain",
+        "properties": {
+            "Disable jobs": {
+                "type": "object",
+                "title": "Disable jobs",
+                "properties": {
+                    "Budget Roll": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Load Documents": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Roll Reports": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Rollup and Submit Documents": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "Budget Roll": false,
+                "Load Documents": false,
+                "Rollup and Submit Documents": true,
+                "Roll Reports": true
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test_chain_job_budget_roll"
+            }
+        },
+        "Job Parameters": {
+            "Budget Roll": {
+                "Budget Roll Parameter Id": "11",
+                "Export Location at Budget Roll Job": "$$PSMAGFINEXPORT$$",
+                "Parameter Location at Budget Roll Job": "$$PSMAGFINPARM$$",
+                "Checkpoint Block Size(Number of documents processed after which checkpoint is to be updated": 100,
+                "Client name for Report": "Yogesh",
+                "Commit Block Size": 1,
+                "Document Status for loaded Budget Documents(2-Ready,1-Held)": 2,
+                "Process Id to pick COA Crosswalk records": "",
+                "Parameter File(.txt)": "$$PSMAGFINPARM$$/BRLoad.txt",
+                "Report File for Budget Documents (.txt)": "BRRollupSubmit.txt",
+                "Document XML file for Budget Documents(.xml)": "BRDocs.xml",
+                "Load Parameter File for Budget Documents(.txt)": "BRLoad.txt",
+                "Common Chain Parameters File (.txt)": "BRParams.txt"
+            }
+        }
+    }
+}

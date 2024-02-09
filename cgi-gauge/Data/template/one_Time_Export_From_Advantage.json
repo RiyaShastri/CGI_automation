@@ -1,0 +1,28 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Export from Advantage"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "One time export job"
+            }
+        },
+        "Job Parameters": {
+            "Export from Advantage": {
+                "Export Location at at Export from Advantage Job":"$$PSMAGFINEXPORT$$",
+                "Commit Block Size":"100",
+                "Export the commodity info for Commodity History":"no",
+                "Export the entire commodity table":"no",
+                "Export Solicitation Response Documents":"yes",
+                "Export Solicitation Documents":"yes",
+                "IP Address of FTP Host on VSS machine": "localhost",
+                "Parameter ID associated with the password value on the Encrypted Batch Parameters table": "FTP_PASSWORD",
+                "User ID to log into VSS FTP Server": "tosh2vss",
+                "Secure File Transfer Protocol":"no",
+                "Table to Export": "R_DEPT;yes;no"  
+            }
+        }
+    }
+}

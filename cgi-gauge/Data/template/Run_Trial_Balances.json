@@ -1,0 +1,24 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Run trial balances",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test trial balances"
+            }
+        },
+        "Job Parameters": {
+            "Search": {
+                "Parameter ID": "98"
+            },
+            "Fiscal Year": "2019",
+            "Accounting Period": "3"
+        }
+    }
+}

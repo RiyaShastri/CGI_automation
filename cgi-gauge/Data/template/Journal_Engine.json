@@ -1,0 +1,25 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Journal Engine",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test journal engine job"
+            }
+        },
+        "Job Parameters": {
+            "Journal Engine": {
+                "Document Code of single doc to journalize": "",
+                "Department code of single doc to journalize": "",
+                "Document Identifier of single doc to journalize": "",
+                "Document Version No. of single doc to journalize": "",
+                "Select block Size": "1000"
+            }
+        }
+    }
+}

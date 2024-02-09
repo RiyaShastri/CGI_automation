@@ -1,0 +1,22 @@
+{
+    "schema": {
+        "title": "Open activity Roll job - Report Process",
+        "type": "object"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "report open activity roll"
+            }
+        },
+        "Parameters": {
+            "Parameter Id": "1",
+            "export location": "$$PSMAGFINEXPORT$$",
+            "Client name for Report": "State of Maine",
+            "Create Pending Text File": "2",
+            "Pending Text File for later SMU rejection from workflow.": "RollPendDocs.txt",
+            "Use Detail Pre-Selection Table": "2",
+            "Run Mode": "Report Only"
+        }
+    }
+}

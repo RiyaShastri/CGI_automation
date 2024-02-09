@@ -1,0 +1,21 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Close accounting period"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test_report_jobs_budget_roll"
+            }
+        },
+        "Job Parameters": {
+            "Close actg": {
+                "Actg Period": 3,
+                "Client name for Report": "State of Maine",
+                "Close All Open Periods Prior": 0,
+                "Fiscal Year": 2019
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "schema": {
+        "title": "Contract  Roll",
+        "type": "object",
+        "properties": {
+            "Disable jobs": {
+                "type": "object",
+                "title": "Disable jobs",
+                "properties": {
+                    "Create Modifications": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Submit Modifications": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Generate Report": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Discard Modification Drafts": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "Create Modifications": false,
+                "Submit Modifications": true,
+                "Generate Report": true,
+                "Discard Modification Drafts": true
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "Test contractRoll"
+            }
+        },
+        "Job Parameters": {
+            "Create contract roll": {
+                "Event types used to replace the non-accounting event types on selected accounting lines": "PR05,PR07",
+                "Indicate whether to apply overrides to all documents chosen": "1",
+                "Location for Log files": "$$PSMAGFINLOGS$$",
+                "Location for Parameter files": "$$PSMAGFINPARM$$",
+                "Accounting Period to be recorded on the modification lines": "1",
+                "Budget Fiscal Year used to select accounting lines for which modifications need to be done": "2019",
+                "Indicate whether to bypass approvals on all documents chosen": "1",
+                "Indicate whether modifications will be created to change event types": "1",
+                "Indicate whether modifications will be created to change reserve funding": "1",
+                "Name to be displayed on report.": "SOM",
+                "Commit Block Size": "1",
+                "Document codes to be selected. Multiple values are allowed if separated by commas": "BPO",
+                "Fiscal Year to be recorden the modification lines. Only one FY is allowed": "2020",
+                "Indicate whether modifications will be created to increment fiscal year": "0",
+                "One or more event types that need to be changed to a specified accounting one": "PR08,PR88",
+                "Reason for Modification": "Gauge"
+            }
+        }
+    }
+}

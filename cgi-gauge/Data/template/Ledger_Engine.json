@@ -1,0 +1,29 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Ledger Engine",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test ledger engine job"
+            }
+        },
+        "Job Parameters": {
+            "Ledger Engine": {
+                "Allowed to exceed max for last document": "Y",
+                "Commit Block Size": "500",
+                "Source Journal ID to Ledgerize in Normal Mode": "",
+                "Maximum number of journal records to ledgerize.": "",
+                "Progression Counter Size": "5000",
+                "Process Logged Gaps": "N",
+                "Rebuild single ledger from scratch.": "",
+                "Process JRNL_LOG records marked as Failed.": "N",
+                "Select block Size": "250"
+            }
+        }
+    }
+}

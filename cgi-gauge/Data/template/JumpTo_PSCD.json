@@ -1,0 +1,102 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup PSCD",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Posting Code": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Closing Classification Code": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Posting Code": "A110"
+            },
+            "Parameters": {
+                "Closing Classification Code": "4"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "F010"
+            },
+            "Parameters": {
+                "Closing Classification Code": "3"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "F011"
+            },
+            "Parameters": {
+                "Closing Classification Code": "3"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "F012"
+            },
+            "Parameters": {
+                "Closing Classification Code": "3"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "F040"
+            },
+            "Parameters": {
+                "Closing Classification Code": "1"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "M001"
+            },
+            "Parameters": {
+                "Closing Classification Code": "1"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "M002"
+            },
+            "Parameters": {
+                "Closing Classification Code": "4"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "M003"
+            },
+            "Parameters": {
+                "Closing Classification Code": "1"
+            }
+        },
+        {
+            "Search": {
+                "Posting Code": "R008"
+            },
+            "Parameters": {
+                "Closing Classification Code": "4"
+            }
+        }
+    ]
+}

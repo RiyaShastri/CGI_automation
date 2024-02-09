@@ -1,0 +1,59 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup BUDLCON",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Control ID": {
+                            "type": "string"
+                        },
+                        "BFY": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Default Violation": {
+                            "type": "string"
+                        },
+                        "Allow Reject": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Structure ID":"90",
+                "Control ID": "40",
+                "BFY": "2020"
+            },
+            "Parameters": {
+                "Default Violation": "Require Override",
+                "Allow Reject": true
+            }
+        },
+        {
+            "Search": {
+                "Structure ID":"90",
+                "Control ID": "9940",
+                "BFY": "2020"
+            },
+            "Parameters": {
+                "Default Violation": "Require Override",
+                "Allow Reject": true
+            }
+        }
+    ]
+}

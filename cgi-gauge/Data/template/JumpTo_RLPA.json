@@ -1,0 +1,46 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Setup RLPA",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Parameter Id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Override Event Type": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Search": {
+            "Parameter Id": "1"
+        },
+        "Parameters": {
+            "Closing BFY": "2019",
+            "Run Mode": "Report Only",
+            "Event Type Selection Criteria": "PR07",
+            "Document Codes": "BPO,CT,CTM,CTB,CTMV,DO,PO",
+            "Modification Fiscal Year": "2020",
+            "Modification Accounting Period": "1",
+            "Adjustment Reason": "YEROLL",
+            "Document Record Date": "",
+            "Override Event Type": false,
+            "Target Event Type": ""
+        }
+    }
+}

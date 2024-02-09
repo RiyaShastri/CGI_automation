@@ -1,0 +1,20 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Calculation budget control amount"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "Spawned-Scheduler"
+            }
+        },
+        "Job Parameters": {
+            "Budget control amount": {
+                "Commit block Size": "1000",
+                "Run Mode": "2",
+                "Select block Size": "5000"
+            }
+        }
+    }
+}

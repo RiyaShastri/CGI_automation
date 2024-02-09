@@ -1,0 +1,38 @@
+{
+    "schema": {
+        "type": "object",
+        "format": "table",
+        "title": "Setup BUDST",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Structure id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Presence Optional": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Search": {
+            "Structure ID": 90
+        },
+        "Parameters": {
+            "Select Level": "Level 3",
+            "Presence Optional": false
+        }
+    }
+}

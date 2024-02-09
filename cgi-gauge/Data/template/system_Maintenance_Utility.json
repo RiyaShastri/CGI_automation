@@ -1,0 +1,26 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "System maintenance utility",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "Sysytem_Utility 1"
+            }
+        },
+        "Job Parameters": {
+            "Intial parameters": {
+                "Action Code": "Reject All Pending Document"
+            },
+            "parameters": {
+                "File Name": "",
+                "Document Type": "PO,RQ",
+                "Document Code": "GASA"
+            }
+        }
+    }
+}

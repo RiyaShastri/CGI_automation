@@ -1,0 +1,68 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup APD",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Fiscal Year": {
+                            "type": "string"
+                        },
+                        "Period": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Fiscal Year": {
+                            "type": "string"
+                        },
+                        "Period": {
+                            "type": "string"
+                        },
+                        "Quarter": {
+                            "type": "string"
+                        },
+                        "Name": {
+                            "type": "string"
+                        },
+                        "End Date": {
+                            "type": "string"
+                        },
+                        "Adjustment Period": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Closed": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Fiscal Year": "2019",
+                "Period": "99"
+            },
+            "Parameters": {
+                "Fiscal Year": "2019",
+                "Period": "99",
+                "Quarter": "Fourth",
+                "Name": "Closing Period",
+                "End Date": "12/31/2019",
+                "Adjustment Period": true,
+                "Closed": true
+            }
+        }
+    ]
+}

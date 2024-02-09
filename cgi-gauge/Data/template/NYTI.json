@@ -1,0 +1,59 @@
+{
+    "schema": {
+        "title": "NYTI Process",
+        "type": "object",
+        "properties": {
+            "Disable jobs": {
+                "type": "object",
+                "title": "Disable jobs",
+                "properties": {
+                    "Delete Records": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "NYTI Process": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "Export/Import Tables": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "NYTI Report": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "NYTI Process": false,
+                "Export/Import Tables": false,
+                "Delete Records": true,
+                "NYTI Report": false
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "YE2020_NYTI_TABLE_PARM_2020.txt"
+            }
+        },
+        "Job Parameters": {
+            "NYTI Process": {
+                "Base Year": "2019",
+                "Effective Date Rule": "2",
+                "Inactive Code Rule": "1",
+                "New Year": "2020",
+                "Run Mode": "1",
+                "Table Overlay": "F",
+                "Parameter File": "NYTI_TABLE_PARM_PRD2019.txt"
+            },
+            "NYTI Report": {
+                "Client Name": "State of Maine"
+            }
+        }
+    }
+}

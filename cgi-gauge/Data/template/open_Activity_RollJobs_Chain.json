@@ -1,0 +1,106 @@
+{
+    "schema": {
+        "title": "Open activity Roll job - Chain Process",
+        "type": "object",
+        "items": {
+            "properties": {
+                "Disable jobs": {
+                    "type": "object",
+                    "title": "Disable jobs",
+                    "properties": {
+                        "Roll Update Preprocess": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Create Round 1": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Submit Round 1": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Except Rpt Rnd 1": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Create Round 2": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Submit Round 2": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        },
+                        "Except Rpt Rnd 2": {
+                            "type": "boolean",
+                            "format": "checkbox"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Disable jobs": {
+            "Job steps": {
+                "Roll Update Preprocess": false,
+                "Create Round 1": true,
+                "Submit Round 1": true,
+                "Except Rpt Rnd 1": true,
+                "Create Round 2": true,
+                "Submit Round 2": true,
+                "Except Rpt Rnd 2": true
+            }
+        },
+        "New Job": {
+            "Parameter": {
+                "Job Name": "chain open activity roll"
+            }
+        },
+        "Job Parameters": {
+            "Create Round 1": {
+                "Log Location at Create Round 1 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Create Round 1 Job": "$$PSMAGFINPARM$$",
+                "Parameter File (.txt)": "RollParams.txt",
+                "Round Number": 1,
+                "Run Type": 3
+            },
+            "Submit Round 1": {
+                "Log Location at Submit Round 1 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Submit Round 1 Job": "$$PSMAGFINPARM$$",
+                "Parameter File (.txt)": "RollParams.txt",
+                "Round Number": 1,
+                "Run Type": 2,
+                "Report File for Round 1 (.txt)": "RollReportRndOne.txt"
+            },
+            "Except Rpt Rnd 1": {
+                "Log Location at Except Rpt Round 1 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Except Rpt Rnd 1 Job": "$$PSMAGFINPARM$$",
+                "Common Chain Parameters File (.txt)": "RollParams.txt",
+                "Report File for Round 1 (.txt)": "RollReportRndOne.txt"
+            },
+            "Create Round 2": {
+                "Log Location at Create Round 2 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Create Round 2 Job": "$$PSMAGFINPARM$$",
+                "Parameter File (.txt)": "RollParams.txt",
+                "Round Number": 2,
+                "Run Type": 3
+            },
+            "Submit Round 2": {
+                "Log Location at Submit Round 2 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Submit Round 2 Job": "$$PSMAGFINPARM$$",
+                "Parameter File (.txt)": "RollParams.txt",
+                "Round Number": "2",
+                "Run Type": "2",
+                "Report File for Round 2 (.txt)": "RollReportRndTwo.txt"
+            },
+            "Except Rpt Rnd 2": {
+                "Log Location at Except Rpt Round 2 Job": "$$PSMAGFINLOGS$$",
+                "Parameter Location at Except Rpt Rnd 2 Job": "$$PSMAGFINPARM$$",
+                "Common Chain Parameters File (.txt)": "RollParams.txt",
+                "Report File for Round 2 (.txt)": "RollReportRndTwo.txt"
+            }
+        }
+    }
+}

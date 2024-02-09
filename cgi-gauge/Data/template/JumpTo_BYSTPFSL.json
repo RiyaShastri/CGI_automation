@@ -1,0 +1,24 @@
+{
+    "schema": {
+        "format": "table",
+        "title": "Setup BYSTPFSL",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Budget FY": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": {
+        "Search": {
+            "Budget FY": "2020"
+        }
+    }
+}

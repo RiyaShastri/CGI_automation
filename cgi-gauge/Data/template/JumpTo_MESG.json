@@ -1,0 +1,38 @@
+{
+    "schema": {
+        "type": "array",
+        "format": "table",
+        "title": "Setup MESG",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Search": {
+                    "type": "object",
+                    "properties": {
+                        "Code": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Parameters": {
+                    "type": "object",
+                    "properties": {
+                        "Severity": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "Search": {
+                "Code": "A6351"
+            },
+            "Parameters": {
+                "Severity": "Information"
+            }
+        }
+    ]
+}

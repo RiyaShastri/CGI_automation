@@ -1,0 +1,16 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup PROGREQ"
+    },
+    "data": {
+        "Search": {
+            "Fiscal Year": "2020",
+            "Department": "",
+            "Unit": ""
+        },
+        "Parameters": {
+            "Program": "Optional"
+        }
+    }
+}

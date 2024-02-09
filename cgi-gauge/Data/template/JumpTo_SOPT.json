@@ -1,0 +1,12 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup SOPT"
+    },
+    "data": {
+        "Search": {
+            "Fiscal Year": "2019"
+        },
+        "Parameters": {}
+    }
+}

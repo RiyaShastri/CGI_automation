@@ -1,0 +1,20 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup LPPA"
+    },
+    "data": {
+        "Search": {
+            "Parameter Id": "1"
+        },
+        "Parameters": {
+            "Closing BFY": "2019",
+            "Run Mode": "Report Only",
+            "Document Codes": "GAE,BPO,CT,CTI,CTM,DO,CTB,CTMV",
+            "Event Type Selection Criteria": "PR02,PRM5,PRM6",
+            "Fiscal Year": "2020",
+            "Accounting Period": "15",
+            "Document Record Date": "06/30/2019"
+        }
+    }
+}

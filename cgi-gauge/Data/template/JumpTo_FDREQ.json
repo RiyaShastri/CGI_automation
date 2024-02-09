@@ -1,0 +1,11 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Setup FDREQ"
+    },
+    "data": {
+        "Search": {
+            "Fiscal Year": "2020"
+        }
+    }
+}

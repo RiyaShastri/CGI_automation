@@ -1,0 +1,26 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Cash Report",
+        "items": {
+            "type": "object"
+        }
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "test Cash_Report"
+            }
+        },
+        "Job Parameters": {
+            "Cash Report": {
+                "Accounting Period": "13",
+                "Client Name for Report": "STATE OF MAINE",
+                "Department code list": "DEPT_ALL",
+                "Fiscal Year": "2019",
+                "Report ID": "GA02",
+                "Enter value Yes or No. No-Report run in month end mode": "Yes"
+            }
+        }
+    }
+}

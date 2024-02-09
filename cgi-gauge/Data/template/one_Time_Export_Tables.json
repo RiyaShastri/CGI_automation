@@ -1,0 +1,28 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "One time export tables"
+    },
+    "data": {
+        "New Job": {
+            "Parameter": {
+                "Job Name": "One time export job"
+            }
+        },
+        "Job Parameters": {
+            "One Time Export Tables": {
+                "purchase history": "no",
+                "commodity table": "no",
+                "16th Table to Export; Full table?": "CVL_BS_RUNPOLICY;yes;no",
+                "Solicitation Response": "no",
+                "Solicitation Documents": "no",
+                "204th table to Export; Full table?": "R_GRNTAPPL_LST;yes;no",
+                "IP Address": "localhost",
+                "Parameter ID": "FTP_PASSWORD",
+                "User ID": "tosh2vss",
+                "90th Table to export, Full table?": "CVL_FIN_EMPL_STA;yes;no",
+                "Table to Export": "R_DEPT;yes;no"
+            }
+        }
+    }
+}
